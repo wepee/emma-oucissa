@@ -86,15 +86,17 @@ li {
     grid-template-areas:
     "bloc1 bloc2"
     "bloc3 bloc4";
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
     margin: 100px;
 
 }
 
 .skill {
     display: flex;
+    justify-self: center;
+}
+
+.skill > h3 {
+    margin: auto 15px;
 }
 
 footer {
