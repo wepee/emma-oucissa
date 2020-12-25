@@ -62,7 +62,7 @@ header > div {
     position: absolute;
     right: 0px;
     animation: scale-in-center 1s cubic-bezier(.25, .46, .45, .94) 500ms both;
-
+    z-index: -1;
 }
 
 .parcours {
@@ -79,7 +79,13 @@ li {
 }
 
 .skill-box {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+    "bloc1 bloc2"
+    "bloc3 bloc4";
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
@@ -88,11 +94,7 @@ li {
 }
 
 .skill {
-    width: 40%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-
 }
 
 footer {
